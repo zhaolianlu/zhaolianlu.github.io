@@ -1,0 +1,21 @@
+title: Zhaolian Lu Lab
+baseURL: https://zhaolianlu.github.io/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+languages:
+  en:
+    languageCode: en-us
+    languageName: English
+    contentDir: content/en
+    weight: 1
+    title: Zhaolian Lu Lab
+  zh:
+    languageCode: zh-Hans
+    languageName: 简体中文
+    contentDir: content/zh
+    weight: 2
+    title: 逖召莲课题组
+params:
+  description: Decoding cancer evolution through single-cell lineage tracing, genomics, and spatial multi-omics.
+

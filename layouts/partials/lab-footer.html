@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <div><strong>{{ if eq .Site.Language.Lang "zh" }}逖召莲课题组{{ else }}Zhaolian Lu Lab{{ end }}</strong><br>{{ if eq .Site.Language.Lang "zh" }}山东省肿瘤医院{{ else }}Shandong Cancer Hospital{{ end }}</div>
+  <div><a href="mailto:luzhaolian@gmail.com">luzhaolian@gmail.com</a><br><a href="mailto:luzhaolian6@163.com">luzhaolian6@163.com</a></div>
+</footer>
+<script>
+const b=document.querySelector('.nav-toggle'),n=document.querySelector('#main-nav');if(b&&n)b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));n.classList.toggle('open')});
+</script>
+

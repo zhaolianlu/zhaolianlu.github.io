@@ -1,0 +1,2 @@
+<!doctype html><html lang="{{ .Site.Language.Lang }}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{ .Title }} | {{ .Site.Title }}</title><link rel="stylesheet" href="/css/lab.css"></head><body>{{ partial "lab-header.html" . }}<main class="page"><header class="page-hero"><p class="eyebrow">{{ .Params.kicker }}</p><h1>{{ .Title }}</h1>{{ with .Description }}<p>{{ . }}</p>{{ end }}</header><article class="prose">{{ .Content }}</article></main>{{ partial "lab-footer.html" . }}</body></html>
+

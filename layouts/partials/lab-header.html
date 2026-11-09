@@ -1,0 +1,21 @@
+{{ $lang := .Site.Language.Lang }}
+<header class="site-header">
+  <div class="nav-shell">
+    <a class="brand" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }} home">
+      <span class="brand-mark" aria-hidden="true">ZL</span>
+      <span><strong>{{ if eq $lang "zh" }}逖召莲课题组{{ else }}Zhaolian Lu Lab{{ end }}</strong><small>{{ if eq $lang "zh" }}山东省肿瘤医院{{ else }}Shandong Cancer Hospital{{ end }}</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Primary navigation">
+      <a href="{{ "/" | relLangURL }}">{{ if eq $lang "zh" }}首页{{ else }}Home{{ end }}</a>
+      <a href="{{ "/research/" | relLangURL }}">{{ if eq $lang "zh" }}研究方向{{ else }}Research{{ end }}</a>
+      <a href="{{ "/people/" | relLangURL }}">{{ if eq $lang "zh" }}团队成员{{ else }}People{{ end }}</a>
+      <a href="{{ "/publications/" | relLangURL }}">{{ if eq $lang "zh" }}论文发表{{ else }}Publications{{ end }}</a>
+      <a href="{{ "/news/" | relLangURL }}">{{ if eq $lang "zh" }}新闻动态{{ else }}News{{ end }}</a>
+      <a href="{{ "/join/" | relLangURL }}">{{ if eq $lang "zh" }}加入我们{{ else }}Join Us{{ end }}</a>
+      <a href="{{ "/contact/" | relLangURL }}">{{ if eq $lang "zh" }}联系方式{{ else }}Contact{{ end }}</a>
+      {{ if eq $lang "zh" }}<a class="language" href="{{ .RelPermalink | strings.TrimPrefix "/zh" }}">EN</a>{{ else }}<a class="language" href="/zh{{ .RelPermalink }}">中</a>{{ end }}
+    </nav>
+  </div>
+</header>
+
